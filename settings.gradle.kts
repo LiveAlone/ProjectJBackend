@@ -12,5 +12,5 @@ plugins {
 
 rootProject.name = "project"
 
-include("spring")
-include("spring-web")
+include("unit")
+include("web")
