@@ -3,7 +3,7 @@
 
     - web tomcat 上下文兼容测试
 
-Docker 容器构建方式
+Docker 容器构建方式, 支持本地推送方式
 ```shell
 ./gradlew build  # 项目构建方式
 
