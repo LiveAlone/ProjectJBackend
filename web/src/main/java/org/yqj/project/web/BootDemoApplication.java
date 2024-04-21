@@ -1,5 +1,6 @@
-package org.yqj.source.demo.web;
+package org.yqj.project.web;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 
@@ -11,6 +12,7 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
  * Email: yaoqijunmail@foxmail.com
  */
 @SpringBootApplication
+@MapperScan("org.yqj.project.web.mapper")
 public class BootDemoApplication {
     public static void main(String[] args) {
         new SpringApplicationBuilder()

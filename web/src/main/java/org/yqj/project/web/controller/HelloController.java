@@ -1,11 +1,11 @@
-package org.yqj.source.demo.web.controller;
+package org.yqj.project.web.controller;
 
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
-import org.yqj.source.demo.web.model.AddressResponse;
-import org.yqj.source.demo.web.model.BaseResponse;
+import org.yqj.project.web.model.AddressResponse;
+import org.yqj.project.web.model.BaseResponse;
 
 import java.net.InetAddress;
 import java.net.UnknownHostException;

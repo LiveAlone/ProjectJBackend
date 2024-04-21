@@ -1,4 +1,4 @@
-package org.yqj.source.demo.web.model;
+package org.yqj.project.web.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
