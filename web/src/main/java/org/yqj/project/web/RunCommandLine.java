@@ -1,13 +1,13 @@
 package org.yqj.project.web;
 
+import com.baomidou.mybatisplus.core.toolkit.CollectionUtils;
 import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.redisson.api.RMap;
 import org.redisson.api.RedissonClient;
-import org.redisson.client.codec.StringCodec;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
-import org.springframework.util.CollectionUtils;
 import org.yqj.project.web.mapper.User;
 import org.yqj.project.web.service.UserService;
 
