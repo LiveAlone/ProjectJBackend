@@ -1,0 +1,28 @@
+services:
+  mysql:
+    image: mysql:8.3
+    hostname: mysql
+    networks:
+      - local-dev
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: todos
+    volumes:
+      - /Users/10126730/workspace/data/docker/mysql:/var/lib/mysql
+
+  redis:
+    image: redis:7
+    hostname: redis
+    ports:
+      - 6379:6379
+    networks:
+      - local-dev
+    volumes:
+      - /Users/10126730/workspace/data/docker/redis:/data
+
+networks:
+  local-dev:
+    name: local-dev
+    external: true

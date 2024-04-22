@@ -1,0 +1,17 @@
+include:
+  - infra.yaml
+
+name: app
+
+services:
+  app:
+    build: .
+    networks:
+      - local-dev
+    ports:
+      - "8080:8080"
+
+networks:
+  local-dev:
+    name: local-dev
+    external: true
