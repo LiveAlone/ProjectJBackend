@@ -60,6 +60,14 @@ services:
       - local-dev
     volumes:
       - /Users/yaoqijun/workspace/data/docker/redis:/data
+  
+  zk:
+    image: zookeeper:3.9
+    hostname: zk
+    ports:
+      - 2181:2181
+    networks:
+      - local-dev
 
 networks:
   local-dev:
