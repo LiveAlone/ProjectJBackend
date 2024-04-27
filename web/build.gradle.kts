@@ -23,5 +23,17 @@ dependencies {
     implementation("com.baomidou:mybatis-plus-spring-boot3-starter:3.5.6")
     implementation("com.baomidou:mybatis-plus-extension:3.5.6")
 
+    // redis
     implementation("org.redisson:redisson-spring-boot-starter:3.28.0")
+
+    // dubbo
+    implementation(platform("org.apache.dubbo:dubbo-bom:3.3.0-beta.1"))
+
+    implementation("org.apache.dubbo:dubbo-spring-boot-starter")
+    implementation("org.apache.dubbo:dubbo-nacos-spring-boot-starter")
+//    implementation("org.apache.dubbo:dubbo-zookeeper-curator5-spring-boot-starter")
+
+    implementation("org.apache.dubbo:dubbo-serialization-fastjson2")
+
+    implementation(project(":api"))
 }

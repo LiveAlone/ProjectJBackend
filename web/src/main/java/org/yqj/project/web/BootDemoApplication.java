@@ -1,5 +1,6 @@
 package org.yqj.project.web;
 
+import org.apache.dubbo.config.spring.context.annotation.EnableDubbo;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
@@ -13,6 +14,7 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
  */
 @SpringBootApplication
 @MapperScan("org.yqj.project.web.mapper")
+@EnableDubbo
 public class BootDemoApplication {
     public static void main(String[] args) {
         new SpringApplicationBuilder()

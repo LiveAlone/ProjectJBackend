@@ -4,10 +4,6 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
     password: root
-  data:
-    redis:
-      host: redis
-      port: 6379
   redis:
     redisson:
       file: classpath:redisson_single.yaml

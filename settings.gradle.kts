@@ -12,5 +12,6 @@ plugins {
 
 rootProject.name = "project"
 
-include("unit")
+include("api")
+include("service")
 include("web")

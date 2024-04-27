@@ -6,4 +6,12 @@ spring:
     password: root
   redis:
     redisson:
-      file: classpath:redisson_single.yaml
+      file: classpath:redisson_single_local.yaml
+
+dubbo:
+  application:
+    name: dubbo-springboot-demo-consumer
+    logger: slf4j
+    qos-port: 33333
+  registry:
+    address: nacos://${nacos.address:localhost}:8848?username=nacos&password=nacos
