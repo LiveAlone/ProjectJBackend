@@ -70,6 +70,12 @@ networks:
 
 ```
 
+ZK 服务注册中心
+```shell
+docker run -d --name local-zk --network local-dev -p 2181:2181 zookeeper:3.9
+```
+
+
 ### 项目启动 
 
 - 激活场景: ```Dspring.profiles.active=cloud```

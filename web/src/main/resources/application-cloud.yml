@@ -7,3 +7,11 @@ spring:
   redis:
     redisson:
       file: classpath:redisson_single.yaml
+
+dubbo:
+  application:
+    name: dubbo-springboot-demo-consumer
+    logger: slf4j
+    qos-port: 33333
+  registry:
+    address: zookeeper://local-zk:2181

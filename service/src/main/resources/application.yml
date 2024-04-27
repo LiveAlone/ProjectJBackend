@@ -13,4 +13,5 @@ dubbo:
   provider:
     serialization: fastjson2
   registry:
-    address: nacos://${nacos.address:localhost}:8848?username=nacos&password=nacos
+    address: zookeeper://${zookeeper.address:127.0.0.1}:2181
+#    address: nacos://${nacos.address:localhost}:8848?username=nacos&password=nacos
